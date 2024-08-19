@@ -44,5 +44,5 @@ _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 **OR**  
 
 > py -m pip install pygame  
-- Choose the number of runs (defined by _runs_). This controls how many chains of numbers converging to run are drawn.
+- Choose the number of runs (defined by _runs_). This controls how many chains of numbers converging to one are drawn.
 - Adjust any starting number parametres.
