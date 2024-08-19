@@ -4,7 +4,7 @@ import math
 
 # data
 data = []
-runs = 5
+runs = 6
 # runs is the number of times it will make a chain from a random number until it converges to 1
 
 # window setup
