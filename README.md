@@ -21,9 +21,12 @@ _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 
 # How do I run the program?
 - Install **matplotlib** if not already installed. This can be done (but not limited to) using:
-> pip install matplotlib
-**OR**
-> py -m pip install matplotlib
+> pip install matplotlib  
+
+**OR**  
+
+> py -m pip install matplotlib  
+
 - Choose the plot mode.
   - Set _mode_ to "d" to run the program for a definite amount of steps (default is 200).
   - Set mode to "i" to run the program until _n_ converges to 1 (indefinite).
