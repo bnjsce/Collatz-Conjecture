@@ -3,7 +3,7 @@
 # What is Collatz Conjecture?
 >Collatz Conjecture asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1.  
 
-_From [https://en.wikipedia.org/wiki/Collatz_conjecture] - Wikipedia article_
+_From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 
 ## What are the two simple arithmetic operations?
 - If positive integer _n_ is even, do _n / 2_.
