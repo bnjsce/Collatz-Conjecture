@@ -1,7 +1,7 @@
 ### Created by Ben Collingridge.
 
 # What is Collatz Conjecture?
->Collatz Conjecture asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1.
+>Collatz Conjecture asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1.  
 _From [https://en.wikipedia.org/wiki/Collatz_conjecture] - Wikipedia article_
 
 ## What are the two simple arithmetic operations?
@@ -14,7 +14,6 @@ _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 - Named after the mathematician Lothar Collatz.
 - Introduced the idea in 1937, two years after receiving his doctorate.
 > The sequence of numbers is sometimes referred to as the hailstone sequence, hailstone numbers, or hailstone numerals (because the values are usually subject to multiple descents and ascents like hailstones in a cloud), or as wondrous numbers.
-
 _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 
 # How do I run the program?
