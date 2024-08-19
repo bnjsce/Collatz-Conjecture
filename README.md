@@ -8,13 +8,15 @@ _From [https://en.wikipedia.org/wiki/Collatz_conjecture] - Wikipedia article_
 ## What are the two simple arithmetic operations?
 - If positive integer _n_ is even, do _n / 2_.
 - If positive integer _n_ is odd, do _3n + 1_.
-> With enough repetition, do all positive integers converge to 1?
+> With enough repetition, do all positive integers converge to 1?  
+
 _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 
 ## Some basic history.
 - Named after the mathematician Lothar Collatz.
 - Introduced the idea in 1937, two years after receiving his doctorate.
-> The sequence of numbers is sometimes referred to as the hailstone sequence, hailstone numbers, or hailstone numerals (because the values are usually subject to multiple descents and ascents like hailstones in a cloud), or as wondrous numbers.
+> The sequence of numbers is sometimes referred to as the hailstone sequence, hailstone numbers, or hailstone numerals (because the values are usually subject to multiple descents and ascents like hailstones in a cloud), or as wondrous numbers.  
+
 _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 
 # How do I run the program?
