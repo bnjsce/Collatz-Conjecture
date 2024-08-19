@@ -29,8 +29,8 @@ _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 
 - Choose the plot mode.
   - Set _mode_ to "d" to run the program for a definite amount of steps (default is 200).
-  - Set mode to "i" to run the program until _n_ converges to 1 (indefinite).
-  - Set mode to "b" to plot both definite and indefinite modes starting at the same number.
+  - Set _mode_ to "i" to run the program until _n_ converges to 1 (indefinite).
+  - Set _mode_ to "b" to plot both definite and indefinite modes starting at the same number.
 - Choose the starting number (defined by _start_) for _n_.
   - By default, this is a random positive integer between 1 and 100, although this can be set to a definite positive integer, or the maximum random value can be increased or decreased.
 - Choose the number of definite steps (_definite_steps_) if you are running in mode "d" or "b".
