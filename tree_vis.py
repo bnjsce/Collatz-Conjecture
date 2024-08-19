@@ -4,7 +4,8 @@ import math
 
 # data
 data = []
-start = random.randint(1, 100)
+runs = 3
+# runs is the number of times it will make a chain from a random number until it converges to 1
 
 # window setup
 WIDTH = 1280
@@ -15,23 +16,33 @@ pg.display.set_caption("Collatz Conjecture - Visualised | Ben Collingridge")
 clock = pg.time.Clock()
 running = True
 
-def collatz(n):
+def is_even(n):
 	if n % 2 == 0:
+		return True
+	else:
+		return False
+
+def collatz(n):
+	if is_even(n):
 		return n / 2
 	else:
 		return (n * 3) + 1
 
-def get_new_pos(h):
-	vertical = h.x * math.sin(90)
-	horizontal = h.y * math.cos(90)
-	return pg.Vector2(horizontal, vertical) * 10
-
-n = start
-i = 0
-while n != 1:
-	i += 1
-	n = int(collatz(n))
-	data.append(pg.Vector2(i * 30, n * 30))
+# [origin, destination]
+trunk = [pg.Vector2(screen.get_width() / 2, screen.get_height()), pg.Vector2(screen.get_width() / 2, screen.get_height() - 30)]
+data.append(trunk)
+for i in range(runs):
+	n = random.randint(1, 75)
+	i = 0
+	while n != 1:
+		i += 1
+		n = int(collatz(n))
+		mult = 0
+		if is_even(n):
+			mult = -1
+		else:
+			mult = 1
+		data.append([data[i - 1][1], pg.Vector2(data[i - 1][1].x + mult * n, data[i - 1][1].y - 30)])
 
 while running:
 	for event in pg.event.get():
@@ -42,17 +53,13 @@ while running:
 
 	# --- LOGIC --- #
 
-
+	for val in data:
+		pg.draw.line(screen, "white", val[0], val[1], 2)
 
 	#################
 
 	# --- RENDER --- #
 
-	for i in range(len(data)):
-		#pg.draw.line(screen, "white", data[i - 1], get_new_pos(data[i]), 2)
-		#pg.draw.line(screen, "white", data[i - 1], data[i], 2)
-		#pg.draw.line(screen, "white", pg.Vector2(screen.get_width() / 2, screen.get_height()) - data[i], data[i], 2)
-		pg.draw.line(screen, "white", pg.Vector2(screen.get_width() / 2, screen.get_height()), data[i], 2)
 
 	##################
 
