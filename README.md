@@ -27,6 +27,7 @@ _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 
 > py -m pip install matplotlib  
 
+## main.py
 - Choose the plot mode.
   - Set _mode_ to "d" to run the program for a definite amount of steps (default is 200).
   - Set _mode_ to "i" to run the program until _n_ converges to 1 (indefinite).
@@ -35,3 +36,13 @@ _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
   - By default, this is a random positive integer between 1 and 100, although this can be set to a definite positive integer, or the maximum random value can be increased or decreased.
 - Choose the number of definite steps (_definite_steps_) if you are running in mode "d" or "b".
   - As mentioned previously, this is defaulted to 200 steps.
+
+## tree_vis.py
+- Install **pygame** if not already installed. This can be done (but not limited to) using:
+> pip install pygame  
+
+**OR**  
+
+> py -m pip install pygame  
+- Choose the number of runs (defined by _runs_). This controls how many chains of numbers converging to run are drawn.
+- Adjust any starting number parametres.
