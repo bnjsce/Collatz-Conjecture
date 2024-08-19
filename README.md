@@ -46,3 +46,6 @@ _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 > py -m pip install pygame  
 - Choose the number of runs (defined by _runs_). This controls how many chains of numbers converging to one are drawn.
 - Adjust any starting number parametres.
+  - I have found that the sort of sweet spot is 5 runs with a random integer between 1 and 150.
+  - The number of runs seems to affect the detail in one spot, whereas the random starting integer affects the detail of the "plant".
+  - Increasing either values decreases the chance of good result.

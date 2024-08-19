@@ -4,7 +4,7 @@ import math
 
 # data
 data = []
-runs = 3
+runs = 5
 # runs is the number of times it will make a chain from a random number until it converges to 1
 
 # window setup
@@ -32,7 +32,7 @@ def collatz(n):
 trunk = [pg.Vector2(screen.get_width() / 2, screen.get_height()), pg.Vector2(screen.get_width() / 2, screen.get_height() - 30)]
 data.append(trunk)
 for i in range(runs):
-	n = random.randint(1, 75)
+	n = random.randint(1, 150)
 	i = 0
 	while n != 1:
 		i += 1
