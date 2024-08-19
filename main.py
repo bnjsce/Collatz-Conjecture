@@ -17,15 +17,16 @@ start = random.randint(1, 100)
 # if mode is b, run both
 mode = "b"
 
+def collatz(n):
+	if n % 2 == 0:
+		return n / 2
+	else:
+		return (n * 3) + 1
+
 def find_data_definite():
 	n = start
 	for i in range(1, definite_steps + 1):
-		print(f"Step {i}\nBefore: {n}")
-		if n % 2 == 0:
-			n = int(n / 2)
-		else:
-			n = int((n * 3) + 1)
-		print(f"After: {n}\n------------------")
+		n = int(collatz(n))
 		x.append(i)
 		y.append(n)
 	plot_data(x, y, "Collatz Conjecture - Visualised | Ben Collingridge", definite_steps, f"Steps (Definite) - Converged to {y[len(y) - 1]}", f"n - Start: {start}")
@@ -35,12 +36,7 @@ def find_data_indefinite():
 	i = 0
 	while n != 1:
 		i += 1
-		print(f"Step {i}\nBefore: {n}")
-		if n % 2 == 0:
-			n = int(n / 2)
-		else:
-			n = int((n * 3) + 1)
-		print(f"After: {n}\n------------------")
+		n = int(collatz(n))
 		x.append(i)
 		y.append(n)
 	plot_data(x, y, "Collatz Conjecture - Visualised | Ben Collingridge", i, "Steps (Indefinite)", f"n - Start: {start}")
@@ -49,12 +45,7 @@ def find_data_both():
 	# definite
 	n = start
 	for i in range(1, definite_steps + 1):
-		#print(f"Step {i} (Definite)\nBefore: {n}")
-		if n % 2 == 0:
-			n = int(n / 2)
-		else:
-			n = int((n * 3) + 1)
-		#print(f"After: {n}\n------------------")
+		n = int(collatz(n))
 		x.append(i)
 		y.append(n)
 
@@ -63,12 +54,7 @@ def find_data_both():
 	i2 = 0
 	while n2 != 1:
 		i2 += 1
-		#print(f"Step {i2} (Indefinite)\nBefore: {n2}")
-		if n2 % 2 == 0:
-			n2 = int(n2 / 2)
-		else:
-			n2 = int((n2 * 3) + 1)
-		#print(f"After: {n2}\n------------------")
+		n2 = int(collatz(n2))
 		x2.append(i2)
 		y2.append(n2)
 
