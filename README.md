@@ -29,7 +29,7 @@ _From [https://en.wikipedia.org/wiki/Collatz_conjecture]_
 
 ## main.py
 - Choose the plot mode.
-  - Set _mode_ to "d" to run the program for a definite amount of steps (default is 200).
+  - Set _mode_ to "d" to run the program for a definite amount of steps (also known as the _**stopping time**).
   - Set _mode_ to "i" to run the program until _n_ converges to 1 (indefinite).
   - Set _mode_ to "b" to plot both definite and indefinite modes starting at the same number.
 - Choose the starting number (defined by _start_) for _n_.
