@@ -50,17 +50,8 @@ while running:
 
 	screen.fill("black")
 
-	# --- LOGIC --- #
-
 	for val in data:
 		pg.draw.line(screen, "white", val[0], val[1], 2)
-
-	#################
-
-	# --- RENDER --- #
-
-
-	##################
 
 	pg.display.update()
 	pg.display.flip()
