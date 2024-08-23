@@ -51,7 +51,7 @@ while running:
 	screen.fill("black")
 
 	for val in data:
-		pg.draw.aaline(screen, "white", val[0], val[1], 10)
+		pg.draw.aaline(screen, "white", val[0], val[1], 100)
 
 	pg.display.update()
 	pg.display.flip()
