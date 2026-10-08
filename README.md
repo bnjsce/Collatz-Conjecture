@@ -130,12 +130,15 @@ plt.show()
 ```
 ## Results
 <img width="971" height="687" alt="image" src="https://github.com/user-attachments/assets/0aa25bd5-8b81-4723-8e56-6b41782444c7" />
+
 _Typical result for "both"._
 
 <img width="999" height="761" alt="image" src="https://github.com/user-attachments/assets/0e87265c-cd07-42da-b5e7-0d6cf9d17e38" />
+
 _From a lower starting number, we can more easily see the 4-2-1 loop which occurs after n has initially converged to 1._
 
 <img width="1000" height="701" alt="image" src="https://github.com/user-attachments/assets/2a923fc0-f9a6-4888-92fc-e179a7427650" />
+
 _The results are sometimes a little bit more interesting._
 
 # Analysis of tree_vis.py
